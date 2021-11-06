@@ -1,0 +1,380 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  background-color: #f8ddf8;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.list-view-header {
+  background-color: #B288C0;
+}
+.flex-container {
+  display: flex;
+}
+
+.flex-vertical-center {
+  align-items: center;
+}
+
+.site-logo { 
+  width: 150px;
+  margin-left: 10px;
+}
+
+.about-button {
+  height: 40px;
+  margin-left: auto;
+  margin-right: 50px;
+
+  background-color: #7E5A9B;
+  border-radius: 12px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14pt;
+  width: 150px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.favorites-header {
+  display: inline-block;
+  margin-left: 10px;
+  padding-top: 7.5px;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+}
+
+.sort-container {
+  padding: 5px 5px;
+  grid-column: span 4;
+}
+
+.grid-item {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+.favorites-bar {
+  grid-column: 1/2;
+  border: 1px solid black;
+  margin: 5px;
+  background-color: #ddbfdd;
+}
+
+.favorites-bar-hidden {
+  display: none;
+}
+
+.playBrowser {
+  display: grid;
+  grid-column: 3/4;
+}
+
+.playBrowser-fav-hidden {
+  grid-column: 2/ span 4;
+}
+
+.filter {
+  display: grid;
+  grid-column: 2/3;
+  grid-template-columns: 1fr 1.5fr;
+  background-color: #ddbfdd;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  height: 265px;
+}
+
+.filter-fav-hidden {
+  display: grid;
+  grid-column: 1/2;
+}
+
+.filter-label {
+  padding-top: 7.5px;
+}
+.filter-input {
+  height: 25px;
+}
+
+.HomeBrowserContainer input[type=text] {
+  padding: 5px 10px 5px 10px;
+}
+
+.filter-button, .clear-filter-button, .favorites-toggle-right, .favorites-toggle-left, .sort-title-button, .sort-year-button {
+  background-color: #7E5A9B;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12pt;
+  width: 75px;
+  margin-left: auto;
+}
+
+.favorites-toggle-left {
+  height: 30px;
+  width: 45px;
+  position: absolute;
+  top: 60%;
+  left: 23%;
+}
+
+.favorites-toggle-right {
+  height: 30px;
+  width: 45px;
+  position:absolute;
+  top: 60%;
+  margin-left: -15px;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  top: -5px;
+  left: 105%;
+  z-index: 1;
+}
+
+.favorites-toggle-right:hover .tooltip-text{
+  visibility: visible;
+}
+
+.sort-title-button, .sort-year-button {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.clear-filter-button {
+  margin-left: 20px;
+}
+
+.plays-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  overflow-y: scroll;
+  height: 800px;
+}
+
+.play-card {
+  border: 1px solid black;
+  background-color: white;
+  margin: 20px;
+  padding-bottom: 10px;
+}
+
+.title-and-year {
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+  font-size: medium;
+}
+
+.title-and-year-fav-visible {
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+  font-size: smaller;
+}
+
+.play-card-image {
+  width: 100%;
+}
+.play-card-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.favorite-item {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.view-button, .favorite-button {
+  background-color: #7E5A9B;
+  color: #FFFFFF;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12pt;
+  height: 30px;
+  width: 75px;
+}
+
+.view-button-fav-visible {
+  background-color: #7E5A9B;
+  color: #FFFFFF;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12pt;
+  height: 25px;
+  width: 50px;
+  font-size: smaller;
+  margin-left: 10px;
+}
+
+.favorite-button {
+  background-color: white;
+  border: none;
+}
+
+
+
+.remove-favorite {
+  background-color: #ddbfdd;
+  border:none;
+}
+
+@media only screen and (max-width: 1850px) {
+  .filter-option {
+      margin-right: 20px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/*For PlayDetails view*/
+.details-panel {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column: span 3;
+  height: 800px;
+
+  margin-top: 5px;
+}
+
+.details-panel-shrink {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column: span 2;
+  height: 800px;
+
+}
+
+.details-general {
+  border: 1px solid black;
+  margin-left: 100px;
+}
+
+.details-tabs {
+  border: 1px solid black;
+  overflow-y: scroll;
+  width: 800px;
+  margin-left: 5px;
+}
+
+.details-general, .details-tabs {
+  margin-top: 5px;
+}
+
+.details-general {
+  padding: 5px;
+}
+
+.details-tabs {
+  padding: 10px;
+}
+
+.details-favorite-button {
+  background-color: #f8ddf8;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12pt;
+  height: 30px;
+  width: 10px;
+}
+
+.details-close-button {
+  background-color: #7E5A9B;
+  color: #FFFFFF;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12pt;
+  height: 30px;
+  width: 75px;
+}
+
+.details-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14pt;
+}
+
+/* For Tabs */
+.tab-list {  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+}
+/*For HomeBrowser animation*/
+.example-appear {
+  opacity: 1;
+  animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+.example-appear.example.appear-active {
+  opacity: 1;
+  animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

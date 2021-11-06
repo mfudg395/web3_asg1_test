@@ -1,0 +1,17 @@
+.modal-main {
+    position:fixed;
+    background: #f8ddf8;
+    width: 80%;
+    height: 90%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #7E5A9B;
+    border-width: 5px;
+    z-index: 10;
+  }
+
+  .modal-main h1 {
+    font-size: 30px;
+    text-align: center;
+  }

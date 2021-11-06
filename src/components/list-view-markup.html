@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Markup only</title>
+    <link href="../assets/css/index.css" rel="stylesheet" />
+   </head>
+   <body>
+       <!--Start Header component-->
+       <header class="list-view-header">
+           <div class="flex-container flex-vertical-center">
+                <!-- logo source: https://toppng.com/free-image/experience-the-discussion-online-library-book-logo-PNG-free-PNG-Images_189362 -->
+                <img src="../assets/images/logo.png" title="Book Logo" alt="Book Logo" class="site-logo"/>
+                <button class="about-button">About</button>
+            </div>
+       </header>
+       <!--End Header component-->
+    <main>
+        <div class="main-container">
+            <!--Start filters component-->
+            <div class="filter">
+                <h2>Filters</h2>
+                <br/>
+                <label for="title-filter" class="filter-label">Title:</label>
+                <input type="text" name="title-filter" class="filter-input" onChange={handleChange}></input>
+    
+                <label for="before-year-filter" class="filter-label">Before year:</label>
+                <input type="text" name="before-year-filter" class="filter-input" onChange={handleChange}></input>
+    
+                <label for="after-year-filter" class="filter-label">After year:</label>
+                <input type="text" name="after-year-filter" class="filter-input" onChange={handleChange}></input>
+    
+                <label for="genre-filter" class="filter-label">Genre:</label>
+                <select name="genre-filter" defaultValue="none" class="filter-input" onChange={handleChange}>
+                    <option value=""></option>
+                    <option value="comedy">Comedy</option>
+                    <option value="tragedy">Tragedy</option>
+                    <option value="history">History</option>
+                </select>
+    
+                <button class="filter-button" onClick={processFilter}>Filter</button>
+                <button class="clear-filter-button" onClick={clearFilter}>Clear</button>
+            </div>
+            <!--End filters component-->
+            <!--Start plays list component-->
+            <div class="plays-list grid-item">
+                
+                <div class="play-card">
+                    <p class="title-and-year">Macbeth (1700)</p>
+                    <div class="play-card-button-container">
+                        <button class="view-button">View</button><button class="favorite-button">❤️</button>
+                    </div>
+                </div>
+                <div class="play-card">
+                    <p class="title-and-year">Macbeth (1700)</p>
+                    <div class="play-card-button-container">
+                        <button class="view-button">View</button><button class="favorite-button">❤️</button>
+                    </div>
+                </div>
+                <div class="play-card">
+                    <p class="title-and-year">Macbeth (1700)</p>
+                    <div class="play-card-button-container">
+                        <button class="view-button">View</button><button class="favorite-button">❤️</button>
+                    </div>
+                </div>
+                <div class="play-card">
+                    <p class="title-and-year">Macbeth (1700)</p>
+                    <div class="play-card-button-container">
+                        <button class="view-button">View</button><button class="favorite-button">❤️</button>
+                    </div>
+                </div>
+                <div class="play-card">
+                    <p class="title-and-year">Macbeth (1700)</p>
+                    <div class="play-card-button-container">
+                        <button class="view-button">View</button><button class="favorite-button">❤️</button>
+                    </div>
+                </div>
+                <div class="play-card">
+                    <p class="title-and-year">Macbeth (1700)</p>
+                    <div class="play-card-button-container">
+                        <button class="view-button">View</button><button class="favorite-button">❤️</button>
+                    </div>
+                </div>
+                                <div class="play-card">
+                    <p class="title-and-year">Macbeth (1700)</p>
+                    <div class="play-card-button-container">
+                        <button class="view-button">View</button><button class="favorite-button">❤️</button>
+                    </div>
+                </div>
+            </div>
+            <!--End plays list component-->
+        </div>
+    </main>
+   </body>
+</html>

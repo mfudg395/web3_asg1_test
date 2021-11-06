@@ -1,0 +1,151 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  background-color: #f8ddf8;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.list-view-header {
+  background-color: #B288C0;
+}
+.flex-container {
+  display: flex;
+}
+
+.flex-vertical-center {
+  align-items: center;
+}
+
+.site-logo { 
+  width: 150px;
+  margin-left: 10px;
+}
+
+.about-button {
+  height: 40px;
+  margin-left: auto;
+  margin-right: 50px;
+
+  background-color: #7E5A9B;
+  border-radius: 12px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14pt;
+  width: 150px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.grid-item {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+.filter {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  background-color: #ddbfdd;
+  margin: 5px 5px 5px 0;
+  padding: 15px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 265px;
+}
+
+.filter-label {
+  padding-top: 7.5px;
+}
+.filter-input {
+  height: 25px;
+}
+
+.HomeBrowserContainer input[type=text] {
+  padding: 5px 10px 5px 10px;
+}
+
+.filter-button, .clear-filter-button {
+  background-color: #7E5A9B;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12pt;
+  width: 75px;
+  margin-left: auto;
+}
+
+.clear-filter-button {
+  margin-left: 20px;
+}
+
+.plays-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.play-card {
+  border: 1px solid black;
+  background-color: white;
+  margin: 20px;
+  padding-bottom: 10px;
+}
+
+.title-and-year {
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.play-card-image {
+  width: 100%;
+}
+.play-card-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.view-button, .favorite-button {
+  background-color: #7E5A9B;
+  color: #FFFFFF;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12pt;
+  height: 30px;
+  width: 75px;
+}
+
+.favorite-button {
+  background-color: white;
+  border: none;
+}
+
+@media only screen and (max-width: 1850px) {
+  .filter-option {
+      margin-right: 20px;
+  }
+}
